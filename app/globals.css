@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+.navbar {
+  background-color: #2b6cb0; /* Dark blue/grey */
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 1.5rem;
+}
+
+.navbar-link {
+  color: #ecf0f1; /* Light grey/white */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #34495e; /* Slightly lighter dark blue */
+  color: #ffffff;
+}
+
+.navbar-link-active {
+  background-color: #183b61; /* Blue */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-link-active:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 245, 245, 245;

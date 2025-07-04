@@ -117,8 +117,8 @@ export function NetworkSimulator() {
 
   return (
     <Flex direction="column" h="100vh">
-      {/* Navegación superior */}
-      <Flex as="nav" bg="blue.600" color="white" p={4} justifyContent="space-between" alignItems="center">
+      {/* Encabezado del simulador */}
+      <Flex bg="blue.600" color="white" p={4} justifyContent="space-between" alignItems="center">
         <Heading size="md">Simulador para redes</Heading>
         <HStack spacing={4}>
           <Button
